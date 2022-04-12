@@ -1,15 +1,21 @@
-# Headline
+# Rails
+  ##  环境配置
+   ### 加速器
 
-> An awesome project.
-# 333
-## 纷纷
-> 222fefef
+   ```
+    gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 
- ```javascript
-    function a(){
+    bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+   ```
+   ### 安装依赖
 
-     console.log(333)
+   ```
+   gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+   bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+   ```
+   ### 创建项目
 
-    }
-
- ```
+   ```
+  rails new --api --database=postgresql --skip-test mangosteen-1
+   
+   ```
